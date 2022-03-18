@@ -1,14 +1,28 @@
+* {
+    font-family: Roboto;
+}
 .header-links-container {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 16px; /* space in between links */
+    gap: 16px; /* space between links */
     flex-direction: row;
-    margin: 1%; /* adds space from the top */
-    width: 80% /* left right alignment control beyond flexbox */
 }
   
-.header-links-item, a:link {
-    color:white;
+.header-links-item, a:link, a:visited {
+    color:#E5E7EB;
+    font-size: 18px;
     text-decoration:none;
+}
+
+.header-logo { 
+    color:#F9FAF8;
+    font-size:24px;
+    font-weight:bolder;
+}
+
+.header-container {
+    display: flex;
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: space-evenly;
 }
