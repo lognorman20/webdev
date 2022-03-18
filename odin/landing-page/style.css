@@ -1,0 +1,14 @@
+.header-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px; /* space in between links */
+    flex-direction: row;
+    margin: 1%; /* adds space from the top */
+    width: 80% /* left right alignment control beyond flexbox */
+}
+  
+.header-links-item, a:link {
+    color:white;
+    text-decoration:none;
+}
