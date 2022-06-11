@@ -1,0 +1,8 @@
+.calculator-buttons-container {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content:center;
+    width:150px;
+}
