@@ -1,3 +1,4 @@
+import { logDOM } from '@testing-library/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -14,6 +15,7 @@ function Square(props) {
 }
   
   class Board extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
@@ -52,7 +54,7 @@ function Square(props) {
         } else {
             status = "Next player: " + (this.state.xIsNext ? "X" : "O");
         }
-
+        
         return (
         <div>
             <div className="status">{status}</div>
@@ -110,7 +112,11 @@ function Square(props) {
     ];
     for (let i = 0; i < lines.length; i++) {
         const [a, b, c] = lines[i];
-        if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+        if (
+            squares[a] 
+            && squares[a] === squares[b] 
+            && squares[a] === squares[c]
+        ) {
         return squares[a];
         }
     }
